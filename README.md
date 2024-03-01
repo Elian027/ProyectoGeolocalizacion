@@ -2,26 +2,30 @@
 ## Aplicación Móvil
 ## Descripción de la aplicación
 La aplicación permite almacenar puntos o coordenadas mediante el toque en la pantalla, luego de seleccionar los puntos los guarda y muestra el área de la figura formada.
+Presionar el botón limpiar, deja el mapa sin los puntos que se han agregado para agregarlos nuevamente
 
 ## Pantalla de inicio de sesión
 ![1](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/daf1f33a-f04c-44ca-a5e5-f907587a0643)
 
 ## Pantalla de registro
-![Pantalla de registro](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/ae1d9238-f210-4acf-9a4d-14971d569a5b)
+![2](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/6624c6df-4e38-40f0-a286-21e5148f5564)
 
 ## Pantalla principal
-![Pantalla principal](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/19f1262d-eb3d-4e2c-ac58-d9d1fb0c9d40)
+![3](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/3acff536-0ac6-419a-ac80-62d4634631bc)
 
 ## Ubicación actual
-![Ubicación actual](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/a509afee-5937-40c1-ac7a-e89dfb6bf2f8)
+![4](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/3960e8eb-3d64-45a4-98df-bb47c595ccbb)
 
 ## Agregar puntos
-![Agregar puntos](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/2f31830f-4f83-4e2a-99a3-edef6020757a)
+![5](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/2595c73a-ca2d-4195-a465-3bf8711e08f6)
 
 ## Área calculada
-![Área calculada](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/93b794c2-a800-48e8-82a0-be466f986f03)
+![6](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/89c32b9b-6497-4643-a8ea-8bf527a6b67e)
 
 ## Figura dibujada
-![Figura dibujada](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/a26a11d0-e4d4-4f82-9534-9eaa4b7c4056)
+![7](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/78a4c353-b99e-4f3d-955e-fedbd90724b1)
+
+## Limpieza de puntos
+![8](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/64bb4308-5c4e-4b8d-99b6-fec5fd2d8216)
 
 ## Sistema web
