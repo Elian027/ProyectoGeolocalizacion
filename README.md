@@ -4,7 +4,7 @@
 La aplicación permite almacenar puntos o coordenadas mediante el toque en la pantalla, luego de seleccionar los puntos los guarda y muestra el área de la figura formada.
 
 ## Pantalla de inicio de sesión
-![Pantalla de inicio de sesión](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/9e6faf86-86e2-4d14-b9e7-9ac7253ef5c5)
+![1](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/daf1f33a-f04c-44ca-a5e5-f907587a0643)
 
 ## Pantalla de registro
 ![Pantalla de registro](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/ae1d9238-f210-4acf-9a4d-14971d569a5b)
