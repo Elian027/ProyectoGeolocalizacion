@@ -29,8 +29,12 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -97,20 +101,32 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         });
 
         locationCallback = new LocationCallback() {
+            FirebaseFirestore db = FirebaseFirestore.getInstance();
+            String usuarioId = obtenerId();
+            DocumentReference userRef = db.collection("Usuarios").document(usuarioId);
+
             @Override
             public void onLocationResult(LocationResult locationResult) {
                 if (locationResult == null) {
                     return;
                 }
-                for (Location location : locationResult.getLocations()) {
-                    // Obtener la ubicación en tiempo real
-                    double latitude = location.getLatitude();
-                    double longitude = location.getLongitude();
 
-                    guardarUbicacion(latitude, longitude);
-                }
+                userRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        if (documentSnapshot.exists()) {
+                            String nombreUsuario = documentSnapshot.getString("nombre"); // Obtener el nombre del usuario del documento
+                            for (Location location : locationResult.getLocations()) {
+                                double latitude = location.getLatitude();
+                                double longitude = location.getLongitude();
+                                guardarUbicacion(latitude, longitude, nombreUsuario);
+                            }
+                        }
+                    }
+                });
             }
         };
+
 
         startLocationUpdates();
 
@@ -243,11 +259,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         startLocationUpdates();
     }
 
-    private void guardarUbicacion(double latitude, double longitude) {
+    private void guardarUbicacion(double latitude, double longitude, String nombreUsuario) {
         // Guardar la ubicación en Realtime Database
         DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference("ubicaciones_usuarios");
         String userId = obtenerId();
         Map<String, Object> ubicacionMap = new HashMap<>();
+        ubicacionMap.put("nombre", nombreUsuario);
         ubicacionMap.put("latitud", latitude);
         ubicacionMap.put("longitud", longitude);
         databaseRef.child(userId).setValue(ubicacionMap);
