@@ -4,6 +4,9 @@
 La aplicación permite almacenar puntos o coordenadas mediante el toque en la pantalla, luego de seleccionar los puntos los guarda y muestra el área de la figura formada.
 Presionar el botón limpiar, deja el mapa sin los puntos que se han agregado para agregarlos nuevamente. También envía la ubicación en tiempo real para localizar a cada usuario.
 
+## Link del APK
+https://m.apkpure.net/group/com.proyectoGEO.myapplication/16585779?hl=es 
+
 ## Pantalla de inicio de sesión
 ![1](https://github.com/Elian027/ProyectoGeolocalizacion/assets/117754199/daf1f33a-f04c-44ca-a5e5-f907587a0643)
 
